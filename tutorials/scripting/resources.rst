@@ -331,7 +331,8 @@ Now, select the :ref:`CharacterBody3D <class_CharacterBody3D>` node which we nam
 
         public partial class BotStatsTable : Resource
         {
-            private Godot.Dictionary<string, BotStats> _stats = new Godot.Dictionary<string, BotStats>();
+            [Export]
+            private Godot.Collections.Dictionary<string, BotStats> _stats = new Godot.Collections.Dictionary<string, BotStats>();
 
             public BotStatsTable()
             {
